@@ -1,0 +1,19 @@
+{
+  "name": "nodegittest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "test_app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erliglesias/test.git"
+  },
+  "author": "erlantz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erliglesias/test/issues"
+  },
+  "homepage": "https://github.com/erliglesias/test#readme"
+}
