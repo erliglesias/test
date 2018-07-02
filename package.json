@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/erliglesias/test/issues"
   },
-  "homepage": "https://github.com/erliglesias/test#readme"
+  "homepage": "https://github.com/erliglesias/test#readme",
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
+  }
 }
