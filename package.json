@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "app.js",
-    "test": "mocha"
+    "test": "mocha",
+    "jshint": "jshint -c .jshintrc --exclude-path .gitignore ."
   },
   "repository": {
     "type": "git",
@@ -18,12 +19,16 @@
   },
   "homepage": "https://github.com/erliglesias/test#readme",
   "devDependencies": {
-    "pre-commit": "^1.2.2"
-  },
-  "dependencies": {
     "chai": "^4.1.2",
     "grunt-jslint": "^1.1.15",
+    "jshint": "^2.9.5",
     "mocha": "^5.2.0",
+    "pre-commit": "^1.2.2",
     "should": "^13.2.1"
-  }
+  },
+  "dependencies": {},
+  "pre-commit": [
+    "test",
+    "jshint"
+  ]
 }

@@ -1,5 +1,10 @@
+var mocha = require('mocha');
+var describe = mocha.describe;
+var it = mocha.it;
+var assert = require('chai').assert;
+
 var assert = require('assert'),
-    should = require('should'),
+    should = require('should'), 
     expect = require('chai').expect;
 
 
@@ -15,6 +20,7 @@ var foo = 'bar',
     beverages = { tea: ['chai', 'matcha', 'oolong'] };
 
 describe('Test Suite 1', function() {
+    "use strict";
     describe('Scenario 1', function() {
         it('Array index check', function() {
             assert.equal(-1, [1, 2, 3].indexOf(4));
@@ -51,6 +57,7 @@ describe('Test Suite 1', function() {
 
 
 describe('Test Suite 2', function() {
+    "use strict";
     before(function() {
         answer = 43;
     });
@@ -59,10 +66,10 @@ describe('Test Suite 2', function() {
 
         it('Equals Check', function() {
             expect(answer).to.equal(43);
-        })
+        });
 
         it('Expected Check', function() {
             expect(answer, 'topic [answer]').to.equal(43);
-        })
+        });
     });
 });
