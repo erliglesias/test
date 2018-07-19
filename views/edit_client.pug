@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1 #{title}
+  form(method='POST', action='/clients/edit/'+client._id)
+  #form-group
+    label Name:
+    input.form-control(name='name', type='text', value=client.name)
+    #form-group
+      label IP:
+      input.form-control(name='ip', type='number', value=client.ip)
+    #form-group
+      label Usuario:
+      textarea.form-control(name='username', type='text', value=client.username)
+    br
+    input.btn.btn-primary(type='submit',value='Submit')

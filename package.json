@@ -1,12 +1,12 @@
 {
-  "name": "nodegittest",
+  "name": "nodekb",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple base app",
   "main": "app.js",
   "scripts": {
-    "start": "app.js",
+    "start": "node app",
     "test": "mocha",
-    "jshint": "jshint -c .jshintrc --exclude-path .gitignore ."
+    "jshint": "jshint -c .jshintrc --exclude-path=.jshintignore ."
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,21 @@
     "url": "https://github.com/erliglesias/test/issues"
   },
   "homepage": "https://github.com/erliglesias/test#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.2",
+    "connect-flash": "^0.1.1",
+    "express": "^4.15.3",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.3",
+    "express-validator": "^3.2.0",
+    "local-network-scanner": "^0.1.2",
+    "mongoose": "^4.10.2",
+    "node-cmd": "^3.0.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "pug": "^2.0.0-rc.1"
+  },
   "devDependencies": {
     "chai": "^4.1.2",
     "grunt-jslint": "^1.1.15",
@@ -26,7 +41,6 @@
     "pre-commit": "^1.2.2",
     "should": "^13.2.1"
   },
-  "dependencies": {},
   "pre-commit": [
     "test",
     "jshint"

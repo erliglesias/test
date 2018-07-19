@@ -1,5 +1,6 @@
 {
   "boss":      true,
+  "esversion":6,
   "node":      true,
   "eqeqeq":    true,
   "strict":    true,
@@ -8,7 +9,12 @@
   "unused":    false,
   "onecase":   true,
   "lastsemic": true,
-  "globals":{
-  	"before": false
-  }
+  "laxcomma"  : true,
+  "laxbreak"  : true,
+  "browser" : true,
+  "globals": {
+        "before": false,
+        "$": false
+    }
 }
+
