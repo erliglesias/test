@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app",
-    "test": "mocha",
+    "test": "nyc mocha",
     "jshint": "jshint -c .jshintrc --exclude-path=.jshintignore ."
   },
   "repository": {
@@ -38,6 +38,7 @@
     "grunt-jslint": "^1.1.15",
     "jshint": "^2.9.5",
     "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
     "pre-commit": "^1.2.2",
     "should": "^13.2.1"
   },
